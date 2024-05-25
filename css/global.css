@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+input {
+    border-radius: 0.8rem;
+    background-color: #DDDDDD;
+    height: 3rem;
+    padding: 0 1rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+    border: 0;
+    color: black;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+label {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+th, td {
+    padding: .7rem 2rem;
+    text-align: left;
+}
+
+thead th {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd; /* Menambahkan border bottom untuk pemisah */
+}
+
+tbody tr {
+    background-color: #fff; /* Warna latar belakang untuk baris data */
+    border-bottom: 1px solid #ddd; /* Menambahkan border bottom untuk pemisah */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+}
+.icon-sm {
+    width: 2.rem;
+    height: 2.rem;
+}
+.icon img
+.icon-sm {
+    width: 100%;
+    height: 100%;
+}
+.d-flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.gap-4 {
+    gap: .2rem;
+}
+.snackbar {
+    height: 5rem;
+    background-color: #97BE5A;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translate(0, -100%);
+    transition: transform 250ms ease-out 100ms;
+    z-index: 10;
+}
+.snackbar.show {
+    transform: translate(0, 0%);
+    transition: transform 250ms ease-out 100ms
+}
+.snackbar h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: .4rem;
+    color: #FF0000;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #1986f3;
+	border-radius: 20px;
+	width: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(3, 179, 255, 0.8);
+}
