@@ -19,11 +19,14 @@
     left: 0;
     width: 15%;
     height: 100vh;
-    background-color: #82C3EC;
+    background: linear-gradient(to bottom, #add8e6, #00008b);
     font-size: 1.4rem;
     padding: 1rem 2rem;
     z-index: 2;
     animation: sliding 0.5s ease-in-out both;
+}
+.sidebar h1 {
+    color: #00008b;
 }
 .sidebar-backdrop {
     display: none;
@@ -41,6 +44,7 @@
     left: 15%;
     width: 85%;
     height: 100vh;
+    background-color: #EEF7FF;
 }
 .content h1 {
     margin-top: 10rem;
@@ -65,6 +69,14 @@ ul li a,
     text-decoration: none;
     color: black;
 }
+.logout-menu a {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.rem;
+    font-weight: 600;
+    transition: transform 250ms ease-out;
+}
 ul li a:hover {
     background-color: #068FFF;
     color: #fff;
@@ -73,6 +85,9 @@ ul li a:hover {
 .logout-menu {
     position: absolute;
     bottom: 1rem;
+}
+.logout-menu a:hover {
+    transform: scale(1.1);
 }
 .merchant-group {
     margin-top: 4rem;
@@ -134,7 +149,7 @@ ul li a:hover {
     }
     .content {
         left: 0;
-        width: 95%;
+        width: 100%;
     }
     .merchant-group {
         grid-template-columns: 1fr;

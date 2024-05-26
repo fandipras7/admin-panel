@@ -58,12 +58,12 @@ thead th {
     background-color: #007BFF;
     color: white;
     text-transform: uppercase;
-    border-bottom: 1px solid #ddd; /* Menambahkan border bottom untuk pemisah */
+    border-bottom: 1px solid #ddd;
 }
 
 tbody tr {
-    background-color: #fff; /* Warna latar belakang untuk baris data */
-    border-bottom: 1px solid #ddd; /* Menambahkan border bottom untuk pemisah */
+    background-color: #add8e6;
+    border-bottom: 1px solid #ddd;
 }
 
 tbody tr:hover {
@@ -76,11 +76,12 @@ tbody tr:hover {
     display: flex;
 }
 .icon-sm {
-    width: 2.rem;
-    height: 2.rem;
+    width: 2.1rem;
+    height: 2.1rem;
 }
-.icon img
-.icon-sm {
+.icon img,
+.icon svg,
+.icon-sm svg {
     width: 100%;
     height: 100%;
 }
@@ -89,6 +90,9 @@ tbody tr:hover {
 }
 .justify-center {
     justify-content: center;
+}
+.item-center {
+    align-items: center;
 }
 .gap-4 {
     gap: .2rem;
