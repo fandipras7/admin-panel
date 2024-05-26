@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const textCreateMerchant = document.querySelector('.create-merchant-btn')
     const logoutBtn = document.querySelector(".logout-menu");
     const snackbar = document.querySelector(".snackbar");
+    const snackbarText = document.querySelector(".snackbar h1");
 
     const exampleData = [
         { groupName: 'Group A', id: 1, name: "shopee", trxVol: 8 },
@@ -23,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     localStorage.setItem('merchants', JSON.stringify(exampleData));
+
+    const showSnackbar = (message, type) => {
+        snackbar.classList.remove('success', 'error');
+        snackbar.classList.add(type);
+        snackbarText.textContent = message
+        snackbar.classList.add("show");
+        setTimeout(() => {
+            snackbar.classList.remove("show");
+        }, 2000)
+    }
 
     const handleClick = (event, link) => {
         event.preventDefault();
@@ -204,11 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
             initializeTable();
             modalCreateMerchant.classList.remove("show")
             modalWrapper.classList.remove("show")
+            showSnackbar("Successfully created data", "success")
         } else {
-            snackbar.classList.add("show");
-            setTimeout(() => {
-                snackbar.classList.remove("show");
-            }, 2000)
+            showSnackbar("Form must be completed!", "error")
         }
     })
 

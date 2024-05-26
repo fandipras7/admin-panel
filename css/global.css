@@ -100,7 +100,6 @@ tbody tr:hover {
 }
 .snackbar {
     height: 6rem;
-    background-color: #CDE8E5;
     position: absolute;
     left: 0;
     right: 0;
@@ -116,9 +115,15 @@ tbody tr:hover {
     font-size: 2.4rem;
     text-align: center;
     margin-top: .4rem;
-    color: #FF0000;
 }
-
+.snackbar.error {
+    background-color: red !important;
+    color: white;
+}
+.snackbar.success {
+    background-color: #CDE8E5;
+    color: #000;
+}
 /* width */
 ::-webkit-scrollbar {
 	width: 8px;
