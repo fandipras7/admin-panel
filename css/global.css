@@ -74,6 +74,7 @@ tbody tr:hover {
     width: 2.5rem;
     height: 2.5rem;
     display: flex;
+    cursor: pointer;
 }
 .icon-sm {
     width: 2.1rem;
@@ -98,8 +99,8 @@ tbody tr:hover {
     gap: .2rem;
 }
 .snackbar {
-    height: 5rem;
-    background-color: #97BE5A;
+    height: 6rem;
+    background-color: #CDE8E5;
     position: absolute;
     left: 0;
     right: 0;
